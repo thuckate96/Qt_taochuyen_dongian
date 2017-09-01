@@ -7,7 +7,7 @@ Item {
     property int staticImgAngleSticker: 0
     Image{
         id: staticImg
-        width: (SrcStatic.get(0).src === "" || (currentPage != pageNum)) ? 0 : 80
+        width: (SrcStatic.get(0).src === "" || (currentPage != pageNum)) ? 0 : 120
         height: (SrcStatic.get(0).src === "" || (currentPage != pageNum)) ? 0 : 150
         source: (currentPage == pageNum) ? SrcStatic.get(0).src : ""
         x: xStaticImg

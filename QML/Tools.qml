@@ -99,18 +99,6 @@ Item {
                     }
                 }
             }
-
-            Column{
-                y: rowVals.height/2
-
-                Button{
-                    text: "Update"
-                    onClicked: {
-//                        myVar = mySticker.xSticker
-                        up8Dialog.open()
-                    }
-                }
-            }
             Menu{
                 id: menuSettingSticker
                 title: "Edit"
@@ -123,10 +111,23 @@ Item {
                 MenuItem{
                     text: "Delete sticker"
                     onTriggered: {
-                        console.log(index)
+                        console.log("index of sticker to delete"+index)
+                        stickerModels.remove(index)
                     }
                 }
             }
+            Column{
+                y: rowVals.height/2
+
+                Button{
+                    text: "Update"
+                    onClicked: {
+//                        myVar = mySticker.xSticker
+                        up8Dialog.open()
+                    }
+                }
+            }
+
 
         }
 

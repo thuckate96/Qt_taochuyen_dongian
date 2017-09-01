@@ -113,7 +113,7 @@ Item {
                 MenuItem{
                     text: "Delete sticker"
                     onTriggered: {
-                        console.log(index)
+                        statictModels.remove(index)
                     }
                 }
             }

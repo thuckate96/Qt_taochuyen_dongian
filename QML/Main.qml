@@ -209,6 +209,7 @@ Item {
                             viewStaticStickerSetting.visible = true
                             for(var i = 0; i < page.children.length; i++){
                                 page.children[i].stateFix = true
+                                page.children[i].destroy()
                             }
                         }
 
@@ -240,6 +241,7 @@ Item {
                             viewStaticStickerSetting.visible = false
                             viewStickerSetting.visible = false
                             page.visible = true
+                            if(stickerModels.count > 1 || statictModels.count > 1)
                             page.loadPage()
                             console.log("Current Page: "+currentPage)
                             if(nextBtn.visible == true) nextBtn.visible = false
@@ -252,6 +254,7 @@ Item {
                             for(var i = 0; i < page.children.length; i++){
                                 page.children[i].stateFix = true
                             }
+
                             console.log("page length children "+page.children.length)
                         }
                         if(isStartSingle == true) isStart = false

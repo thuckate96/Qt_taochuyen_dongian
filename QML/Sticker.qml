@@ -1,7 +1,7 @@
 import QtQuick 2.5
 import QtQuick.Controls 1.4
 Item {
-    property int widSticker: 100
+    property int widSticker: 120
     property int heiSticker: 150
     property int xSticker: 0
     property int ySticker: 0

@@ -114,8 +114,14 @@ Item {
     //animate cho viec di chuyen toi mot toa do khac
     ParallelAnimation{
         running: isWait
-        NumberAnimation{target: image ; property: "x"; to: coorsMove[0].x; duration: animateTime; easing.type: Easing.Linear}
-        NumberAnimation{target: image ; property: "y"; to: coorsMove[0].y; duration: animateTime; easing.type: Easing.Linear}
+        NumberAnimation{
+            target: image ; property: "x"; to: coorsMove[0].x;
+            duration: animateTime; easing.type: Easing.Linear
+        }
+        NumberAnimation{
+            target: image ; property: "y"; to: coorsMove[0].y;
+            duration: animateTime; easing.type: Easing.Linear
+        }
     }
     //Xu ly thoi gian cho
     Timer{
